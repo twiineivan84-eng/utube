@@ -30,6 +30,7 @@ export default defineConfig(() => {
   const isHmrDisabled = process.env.DISABLE_HMR === 'true';
 
   return {
+    base: '/utube/',
     plugins: [
       react(),
       tailwindcss(),
