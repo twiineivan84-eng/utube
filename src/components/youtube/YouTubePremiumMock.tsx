@@ -91,7 +91,7 @@ export function UTubeWebsite() {
       {selected && <div className="ytm-modal-backdrop" role="presentation" onMouseDown={() => setSelected(null)}>
         <section className="ytm-player-modal" role="dialog" aria-modal="true" aria-label={selected.title} onMouseDown={(event) => event.stopPropagation()}>
           <div className="ytm-player-heading"><div><h2>{selected.title}</h2><p>{selected.channel}</p></div><button className="ytm-modal-close" onClick={() => setSelected(null)} aria-label="Close"><X /></button></div>
-          <div className="ytm-player"><iframe src={`https://www.youtube-nocookie.com/embed/${selected.id}?autoplay=1&rel=0`} title={selected.title} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div>
+          <div className="ytm-player"><iframe src={`https://www.youtube.com/embed/${selected.id}?autoplay=1&rel=0`} title={selected.title} referrerPolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div>
         </section>
       </div>}
 
