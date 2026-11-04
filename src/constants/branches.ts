@@ -1,0 +1,58 @@
+import { Branch } from '../types';
+
+export const INITIAL_BRANCHES: Branch[] = [
+  {
+    id: 'br-nyamuyanja',
+    code: 'NYAMUYANJA',
+    name: 'Nyamuyanja Branch',
+    district: 'Isingiro',
+    isHeadquarters: true,
+    isActive: true,
+    createdAt: '2026-01-01T00:00:00Z',
+  },
+  {
+    id: 'br-kagarama',
+    code: 'KAGARAMA',
+    name: 'Kagarama Branch',
+    district: 'Isingiro',
+    isHeadquarters: false,
+    isActive: true,
+    createdAt: '2026-01-01T00:00:00Z',
+  },
+  {
+    id: 'br-nyakigyera',
+    code: 'NYAKIGYERA',
+    name: 'Nyakigyera Branch',
+    district: 'Isingiro',
+    isHeadquarters: false,
+    isActive: true,
+    createdAt: '2026-01-01T00:00:00Z',
+  },
+  {
+    id: 'br-kamubeizi',
+    code: 'KAMUBEIZI',
+    name: 'Kamubeizi Branch',
+    district: 'Isingiro',
+    isHeadquarters: false,
+    isActive: true,
+    createdAt: '2026-01-01T00:00:00Z',
+  },
+  {
+    id: 'br-ruborogota',
+    code: 'RUBOROGOTA',
+    name: 'Ruborogota Branch',
+    district: 'Isingiro',
+    isHeadquarters: false,
+    isActive: true,
+    createdAt: '2026-01-01T00:00:00Z',
+  },
+  {
+    id: 'br-masha',
+    code: 'MASHA',
+    name: 'Masha Branch',
+    district: 'Isingiro',
+    isHeadquarters: false,
+    isActive: true,
+    createdAt: '2026-01-01T00:00:00Z',
+  },
+];

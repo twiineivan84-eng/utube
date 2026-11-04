@@ -1,0 +1,1295 @@
+{
+  "version": "1.0.0-phase7",
+  "exportedAt": "2026-10-21T14:48:56.219Z",
+  "createdBy": {
+    "userId": "usr-it-01",
+    "username": "itadm",
+    "fullName": "IT Systems Officer"
+  },
+  "data": {
+    "branches": [
+      {
+        "id": "br-nyamuyanja",
+        "code": "NYAMUYANJA",
+        "name": "Nyamuyanja Branch",
+        "district": "Isingiro",
+        "isHeadquarters": true,
+        "isActive": true,
+        "createdAt": "2026-01-01T00:00:00Z"
+      },
+      {
+        "id": "br-kagarama",
+        "code": "KAGARAMA",
+        "name": "Kagarama Branch",
+        "district": "Isingiro",
+        "isHeadquarters": false,
+        "isActive": true,
+        "createdAt": "2026-01-01T00:00:00Z"
+      },
+      {
+        "id": "br-nyakigyera",
+        "code": "NYAKIGYERA",
+        "name": "Nyakigyera Branch",
+        "district": "Isingiro",
+        "isHeadquarters": false,
+        "isActive": true,
+        "createdAt": "2026-01-01T00:00:00Z"
+      },
+      {
+        "id": "br-kamubeizi",
+        "code": "KAMUBEIZI",
+        "name": "Kamubeizi Branch",
+        "district": "Isingiro",
+        "isHeadquarters": false,
+        "isActive": true,
+        "createdAt": "2026-01-01T00:00:00Z"
+      },
+      {
+        "id": "br-ruborogota",
+        "code": "RUBOROGOTA",
+        "name": "Ruborogota Branch",
+        "district": "Isingiro",
+        "isHeadquarters": false,
+        "isActive": true,
+        "createdAt": "2026-01-01T00:00:00Z"
+      },
+      {
+        "id": "br-masha",
+        "code": "MASHA",
+        "name": "Masha Branch",
+        "district": "Isingiro",
+        "isHeadquarters": false,
+        "isActive": true,
+        "createdAt": "2026-01-01T00:00:00Z"
+      }
+    ],
+    "roles": [
+      {
+        "id": "role-gm",
+        "name": "General Manager",
+        "code": "GM",
+        "description": "Executive leadership with unrestricted institutional authority across all branches",
+        "isSystem": true,
+        "permissions": [
+          "members.view",
+          "members.register",
+          "members.edit",
+          "members.delete",
+          "members.search",
+          "members.history",
+          "turihamwe.view",
+          "turihamwe.register_plan",
+          "turihamwe.manage_beneficiaries",
+          "turihamwe.view_contributions",
+          "turihamwe.record_contribution",
+          "turihamwe.view_renewals",
+          "turihamwe.record_renewal",
+          "turihamwe.view_expiry",
+          "turihamwe.reactivate_plan",
+          "turihamwe.view_history",
+          "transactions.view",
+          "transactions.record",
+          "transactions.print_receipts",
+          "transactions.edit",
+          "claims.view",
+          "claims.create",
+          "claims.edit",
+          "claims.upload_documents",
+          "claims.review",
+          "claims.request_documents",
+          "claims.approve",
+          "claims.reject",
+          "claims.close",
+          "claims.view_history",
+          "claims.view_payment_info",
+          "reports.view",
+          "reports.generate",
+          "reports.monthly_performance",
+          "reports.edit_templates",
+          "reports.export",
+          "reports.view_financial",
+          "sms.view_history",
+          "sms.send",
+          "sms.manage_templates",
+          "sms.retry_failed",
+          "sms.view_queue",
+          "sms.view_notifications",
+          "sms.configure_events",
+          "alerts.view",
+          "alerts.manage",
+          "admin.manage_users",
+          "admin.create_groups",
+          "admin.assign_rights",
+          "admin.modify_rights",
+          "admin.multi_branch_access",
+          "admin.system_settings",
+          "audit.view_logs",
+          "audit.system_reports",
+          "audit.sync_status",
+          "audit.manage_backups"
+        ],
+        "createdAt": "2026-01-01T00:00:00Z",
+        "updatedAt": "2026-01-01T00:00:00Z"
+      },
+      {
+        "id": "role-it",
+        "name": "IT Officer",
+        "code": "IT_OFFICER",
+        "description": "Systems administration, user provisioning, security, and audit management",
+        "isSystem": true,
+        "permissions": [
+          "admin.manage_users",
+          "admin.create_groups",
+          "admin.assign_rights",
+          "admin.modify_rights",
+          "admin.multi_branch_access",
+          "admin.system_settings",
+          "audit.view_logs",
+          "audit.system_reports",
+          "audit.sync_status",
+          "audit.manage_backups",
+          "sms.view_history",
+          "sms.send",
+          "sms.manage_templates",
+          "sms.retry_failed",
+          "sms.view_queue",
+          "sms.view_notifications",
+          "sms.configure_events",
+          "alerts.view",
+          "alerts.manage",
+          "members.view",
+          "members.register",
+          "members.edit",
+          "members.delete",
+          "members.search",
+          "members.history",
+          "turihamwe.view",
+          "turihamwe.view_history",
+          "reports.view",
+          "reports.generate"
+        ],
+        "createdAt": "2026-01-01T00:00:00Z",
+        "updatedAt": "2026-01-01T00:00:00Z"
+      },
+      {
+        "id": "role-bm",
+        "name": "Branch Manager",
+        "code": "BRANCH_MGR",
+        "description": "Operational manager for branch staff, member reviews, claims and branch reports",
+        "isSystem": true,
+        "permissions": [
+          "members.view",
+          "members.register",
+          "members.search",
+          "members.history",
+          "turihamwe.view",
+          "turihamwe.register_plan",
+          "turihamwe.manage_beneficiaries",
+          "turihamwe.view_contributions",
+          "turihamwe.record_contribution",
+          "turihamwe.view_renewals",
+          "turihamwe.record_renewal",
+          "turihamwe.view_expiry",
+          "turihamwe.reactivate_plan",
+          "turihamwe.view_history",
+          "transactions.view",
+          "transactions.record",
+          "transactions.print_receipts",
+          "transactions.edit",
+          "claims.view",
+          "claims.create",
+          "claims.edit",
+          "claims.upload_documents",
+          "claims.review",
+          "claims.request_documents",
+          "claims.approve",
+          "claims.reject",
+          "claims.close",
+          "claims.view_history",
+          "claims.view_payment_info",
+          "reports.view",
+          "reports.generate",
+          "reports.monthly_performance",
+          "reports.export",
+          "reports.view_financial",
+          "audit.view_logs",
+          "audit.sync_status",
+          "sms.view_history",
+          "sms.send",
+          "sms.manage_templates",
+          "sms.retry_failed",
+          "sms.view_queue",
+          "sms.view_notifications",
+          "alerts.view",
+          "alerts.manage"
+        ],
+        "createdAt": "2026-01-01T00:00:00Z",
+        "updatedAt": "2026-01-01T00:00:00Z"
+      },
+      {
+        "id": "role-accounts",
+        "name": "Accounts Assistant",
+        "code": "ACCOUNTS_ASST",
+        "description": "Financial reconciliations, contributions, renewals, and accounting reports",
+        "isSystem": true,
+        "permissions": [
+          "members.view",
+          "members.search",
+          "turihamwe.view",
+          "turihamwe.view_contributions",
+          "turihamwe.record_contribution",
+          "turihamwe.view_renewals",
+          "turihamwe.record_renewal",
+          "turihamwe.view_expiry",
+          "transactions.view",
+          "transactions.record",
+          "transactions.print_receipts",
+          "claims.view",
+          "claims.close",
+          "claims.view_history",
+          "claims.view_payment_info",
+          "reports.view",
+          "reports.generate",
+          "reports.monthly_performance",
+          "reports.export",
+          "reports.view_financial",
+          "sms.view_history",
+          "alerts.view"
+        ],
+        "createdAt": "2026-01-01T00:00:00Z",
+        "updatedAt": "2026-01-01T00:00:00Z"
+      },
+      {
+        "id": "role-cashier",
+        "name": "Cashier / Teller",
+        "code": "TELLER",
+        "description": "Front-counter member interactions, contribution intake, and receipt printing",
+        "isSystem": true,
+        "permissions": [
+          "members.view",
+          "members.search",
+          "turihamwe.view",
+          "turihamwe.view_contributions",
+          "turihamwe.record_contribution",
+          "turihamwe.view_renewals",
+          "turihamwe.record_renewal",
+          "transactions.view",
+          "transactions.record",
+          "transactions.print_receipts",
+          "claims.view",
+          "claims.create",
+          "claims.upload_documents",
+          "claims.view_history",
+          "alerts.view"
+        ],
+        "createdAt": "2026-01-01T00:00:00Z",
+        "updatedAt": "2026-01-01T00:00:00Z"
+      },
+      {
+        "id": "role-banking-asst",
+        "name": "Banking Assistant",
+        "code": "BANKING_ASST",
+        "description": "Member registrations, Turihamwe enrolments, and beneficiary documentation",
+        "isSystem": true,
+        "permissions": [
+          "members.view",
+          "members.register",
+          "members.search",
+          "turihamwe.view",
+          "turihamwe.register_plan",
+          "turihamwe.manage_beneficiaries",
+          "turihamwe.view_contributions",
+          "turihamwe.view_renewals",
+          "claims.view",
+          "claims.create",
+          "claims.edit",
+          "claims.upload_documents",
+          "claims.view_history"
+        ],
+        "createdAt": "2026-01-01T00:00:00Z",
+        "updatedAt": "2026-01-01T00:00:00Z"
+      },
+      {
+        "id": "role-credit-officer",
+        "name": "Credit Officer",
+        "code": "CREDIT_OFFICER",
+        "description": "Field member vetting, profile verification, and policy review",
+        "isSystem": true,
+        "permissions": [
+          "members.view",
+          "members.search",
+          "turihamwe.view",
+          "turihamwe.view_contributions",
+          "turihamwe.view_renewals",
+          "turihamwe.view_expiry"
+        ],
+        "createdAt": "2026-01-01T00:00:00Z",
+        "updatedAt": "2026-01-01T00:00:00Z"
+      },
+      {
+        "id": "role-credit-supervisor",
+        "name": "Credit Supervisor",
+        "code": "CREDIT_SUPV",
+        "description": "Supervisory review of member accounts and branch portfolio status",
+        "isSystem": true,
+        "permissions": [
+          "members.view",
+          "members.search",
+          "members.history",
+          "turihamwe.view",
+          "turihamwe.view_contributions",
+          "turihamwe.view_renewals",
+          "turihamwe.view_expiry",
+          "reports.view",
+          "reports.generate",
+          "reports.monthly_performance"
+        ],
+        "createdAt": "2026-01-01T00:00:00Z",
+        "updatedAt": "2026-01-01T00:00:00Z"
+      },
+      {
+        "id": "role-auditor",
+        "name": "Internal Auditor",
+        "code": "AUDITOR",
+        "description": "Read-only surveillance of institutional actions, audit trails and financial metrics",
+        "isSystem": true,
+        "permissions": [
+          "members.view",
+          "members.search",
+          "members.history",
+          "turihamwe.view",
+          "turihamwe.view_contributions",
+          "turihamwe.view_renewals",
+          "turihamwe.view_expiry",
+          "turihamwe.view_history",
+          "transactions.view",
+          "claims.view",
+          "claims.view_history",
+          "claims.view_payment_info",
+          "reports.view",
+          "reports.generate",
+          "reports.monthly_performance",
+          "reports.export",
+          "reports.view_financial",
+          "audit.view_logs",
+          "audit.system_reports",
+          "audit.sync_status",
+          "sms.view_history",
+          "sms.view_queue",
+          "sms.view_notifications",
+          "alerts.view"
+        ],
+        "createdAt": "2026-01-01T00:00:00Z",
+        "updatedAt": "2026-01-01T00:00:00Z"
+      },
+      {
+        "id": "role-marketing",
+        "name": "Marketing / Head of Marketing",
+        "code": "MARKETING",
+        "description": "Turihamwe growth, membership drive metrics, and promotional campaigns",
+        "isSystem": true,
+        "permissions": [
+          "members.view",
+          "members.search",
+          "turihamwe.view",
+          "turihamwe.view_renewals",
+          "turihamwe.view_expiry",
+          "reports.view",
+          "reports.generate",
+          "reports.monthly_performance"
+        ],
+        "createdAt": "2026-01-01T00:00:00Z",
+        "updatedAt": "2026-01-01T00:00:00Z"
+      }
+    ],
+    "permissions": [
+      {
+        "code": "members.view",
+        "name": "View Members",
+        "category": "MEMBERS",
+        "description": "Allows viewing SACCO member directory and profiles"
+      },
+      {
+        "code": "members.register",
+        "name": "Register Member",
+        "category": "MEMBERS",
+        "description": "Allows registering new SACCO members with existing account number"
+      },
+      {
+        "code": "members.edit",
+        "name": "Edit Member",
+        "category": "MEMBERS",
+        "description": "Allows editing member info within 5 days or via controlled corrections (Admin only)"
+      },
+      {
+        "code": "members.delete",
+        "name": "Delete Member",
+        "category": "MEMBERS",
+        "description": "Allows safe deletion or deactivation of member records (Admin only)"
+      },
+      {
+        "code": "members.search",
+        "name": "Search Members",
+        "category": "MEMBERS",
+        "description": "Allows searching members by SACCO account number or name"
+      },
+      {
+        "code": "members.history",
+        "name": "View Member History",
+        "category": "MEMBERS",
+        "description": "Allows viewing historical audit trail of member profile changes"
+      },
+      {
+        "code": "turihamwe.view",
+        "name": "View Turihamwe",
+        "category": "TURIHAMWE",
+        "description": "Access the Turihamwe insurance module and plans"
+      },
+      {
+        "code": "turihamwe.register_plan",
+        "name": "Register Plan",
+        "category": "TURIHAMWE",
+        "description": "Register members into Turihamwe insurance cover"
+      },
+      {
+        "code": "turihamwe.manage_beneficiaries",
+        "name": "Manage Beneficiaries",
+        "category": "TURIHAMWE",
+        "description": "Add, update or remove beneficiaries linked to a member plan"
+      },
+      {
+        "code": "turihamwe.view_contributions",
+        "name": "View Contributions",
+        "category": "TURIHAMWE",
+        "description": "View member contribution history and records"
+      },
+      {
+        "code": "turihamwe.record_contribution",
+        "name": "Record Contribution",
+        "category": "TURIHAMWE",
+        "description": "Record new premium/contribution payments for Turihamwe"
+      },
+      {
+        "code": "turihamwe.view_renewals",
+        "name": "View Renewals",
+        "category": "TURIHAMWE",
+        "description": "View policy renewal timelines and statuses"
+      },
+      {
+        "code": "turihamwe.record_renewal",
+        "name": "Record Renewal",
+        "category": "TURIHAMWE",
+        "description": "Process policy renewals for active or expiring covers"
+      },
+      {
+        "code": "turihamwe.view_expiry",
+        "name": "View Expiry",
+        "category": "TURIHAMWE",
+        "description": "View upcoming expirations, grace periods, and expired policies"
+      },
+      {
+        "code": "turihamwe.reactivate_plan",
+        "name": "Reactivate Plan",
+        "category": "TURIHAMWE",
+        "description": "Reactivate expired Turihamwe insurance plans where permitted"
+      },
+      {
+        "code": "turihamwe.view_history",
+        "name": "View Turihamwe History",
+        "category": "TURIHAMWE",
+        "description": "Inspect comprehensive Turihamwe lifecycle and policy logs"
+      },
+      {
+        "code": "transactions.view",
+        "name": "View Transactions",
+        "category": "TRANSACTIONS",
+        "description": "View transaction logs and financial records"
+      },
+      {
+        "code": "transactions.record",
+        "name": "Record Transactions",
+        "category": "TRANSACTIONS",
+        "description": "Record cash, bank, or mobile money transactions"
+      },
+      {
+        "code": "transactions.print_receipts",
+        "name": "Print Receipts",
+        "category": "TRANSACTIONS",
+        "description": "Generate and print official Nyamuyanja SACCO transaction receipts"
+      },
+      {
+        "code": "transactions.edit",
+        "name": "Edit Transactions",
+        "category": "TRANSACTIONS",
+        "description": "Authorized supervisor adjustment of transaction entries"
+      },
+      {
+        "code": "claims.view",
+        "name": "View Claims",
+        "category": "CLAIMS",
+        "description": "View submitted insurance claims and tracking info"
+      },
+      {
+        "code": "claims.create",
+        "name": "Create Claim",
+        "category": "CLAIMS",
+        "description": "Initiate a new Turihamwe claim for a beneficiary"
+      },
+      {
+        "code": "claims.edit",
+        "name": "Edit Claim",
+        "category": "CLAIMS",
+        "description": "Update permitted claim information while in draft or awaiting documents"
+      },
+      {
+        "code": "claims.upload_documents",
+        "name": "Upload Documents",
+        "category": "CLAIMS",
+        "description": "Attach death certificates, identity docs, or police reports"
+      },
+      {
+        "code": "claims.review",
+        "name": "Review Claim",
+        "category": "CLAIMS",
+        "description": "Perform preliminary verification and documentation review"
+      },
+      {
+        "code": "claims.request_documents",
+        "name": "Request Claim Documents",
+        "category": "CLAIMS",
+        "description": "Formally request supplementary or clarified documents for a claim"
+      },
+      {
+        "code": "claims.approve",
+        "name": "Approve Claim",
+        "category": "CLAIMS",
+        "description": "Authorized executive approval for claim settlement"
+      },
+      {
+        "code": "claims.reject",
+        "name": "Reject Claim",
+        "category": "CLAIMS",
+        "description": "Formal rejection of ineligible or fraudulent claims"
+      },
+      {
+        "code": "claims.close",
+        "name": "Close Claim",
+        "category": "CLAIMS",
+        "description": "Finalize payment disbursement and close claim docket"
+      },
+      {
+        "code": "claims.view_history",
+        "name": "View Claim History",
+        "category": "CLAIMS",
+        "description": "Inspect complete audit history, document versions and review logs for claims"
+      },
+      {
+        "code": "claims.view_payment_info",
+        "name": "View Claim Payment Info",
+        "category": "CLAIMS",
+        "description": "Inspect financial references and voucher details for settled claims"
+      },
+      {
+        "code": "reports.view",
+        "name": "View Reports",
+        "category": "REPORTS",
+        "description": "Access operational reporting modules"
+      },
+      {
+        "code": "reports.generate",
+        "name": "Generate Reports",
+        "category": "REPORTS",
+        "description": "Generate standard member, contribution and renewal reports"
+      },
+      {
+        "code": "reports.monthly_performance",
+        "name": "Monthly Performance Reports",
+        "category": "REPORTS",
+        "description": "Generate monthly branch summary and portfolio performance"
+      },
+      {
+        "code": "reports.edit_templates",
+        "name": "Edit Report Templates",
+        "category": "REPORTS",
+        "description": "Customize institutional report formats and parameters"
+      },
+      {
+        "code": "reports.export",
+        "name": "Export Reports",
+        "category": "REPORTS",
+        "description": "Export report data to PDF, Excel or CSV"
+      },
+      {
+        "code": "reports.view_financial",
+        "name": "View Financial Figures",
+        "category": "REPORTS",
+        "description": "Access sensitive monetary sums, portfolio value and aggregates"
+      },
+      {
+        "code": "sms.view_history",
+        "name": "View SMS History",
+        "category": "SMS/NOTIFICATIONS",
+        "description": "Inspect outbound SMS logs, delivery statuses and timestamps"
+      },
+      {
+        "code": "sms.send",
+        "name": "Send SMS",
+        "category": "SMS/NOTIFICATIONS",
+        "description": "Queue and dispatch automated or manual SMS notifications to members"
+      },
+      {
+        "code": "sms.manage_templates",
+        "name": "Manage SMS Templates",
+        "category": "SMS/NOTIFICATIONS",
+        "description": "Create, update and configure standardized SMS message templates"
+      },
+      {
+        "code": "sms.retry_failed",
+        "name": "Retry Failed SMS",
+        "category": "SMS/NOTIFICATIONS",
+        "description": "Manually or batch re-trigger delivery for failed SMS messages"
+      },
+      {
+        "code": "sms.view_queue",
+        "name": "View SMS Queue",
+        "category": "SMS/NOTIFICATIONS",
+        "description": "Monitor pending, sending and offline queued SMS messages"
+      },
+      {
+        "code": "sms.view_notifications",
+        "name": "View Notification Events",
+        "category": "SMS/NOTIFICATIONS",
+        "description": "Review system-generated notification triggers and history"
+      },
+      {
+        "code": "sms.configure_events",
+        "name": "Configure Notification Events",
+        "category": "SMS/NOTIFICATIONS",
+        "description": "Configure automated SMS trigger policies and scheduling rules"
+      },
+      {
+        "code": "alerts.view",
+        "name": "View System Alerts",
+        "category": "ALERTS",
+        "description": "Access the in-system alert and notification center"
+      },
+      {
+        "code": "alerts.manage",
+        "name": "Manage System Alerts",
+        "category": "ALERTS",
+        "description": "Acknowledge, dismiss or resolve operational and system alerts"
+      },
+      {
+        "code": "admin.manage_users",
+        "name": "Manage Users",
+        "category": "ADMINISTRATION",
+        "description": "Create, update, activate and deactivate staff user accounts"
+      },
+      {
+        "code": "admin.create_groups",
+        "name": "Create User Groups",
+        "category": "ADMINISTRATION",
+        "description": "Create custom functional roles and permission profiles"
+      },
+      {
+        "code": "admin.assign_rights",
+        "name": "Assign Rights",
+        "category": "ADMINISTRATION",
+        "description": "Allocate permissions to roles or individual user overrides"
+      },
+      {
+        "code": "admin.modify_rights",
+        "name": "Modify Rights",
+        "category": "ADMINISTRATION",
+        "description": "Revoke or alter security rights for roles and users"
+      },
+      {
+        "code": "admin.multi_branch_access",
+        "name": "Multi-Branch Access",
+        "category": "ADMINISTRATION",
+        "description": "Permission to access and work across multiple designated branches"
+      },
+      {
+        "code": "admin.system_settings",
+        "name": "System Settings",
+        "category": "ADMINISTRATION",
+        "description": "Configure institutional settings, SMS gateways, and parameters"
+      },
+      {
+        "code": "audit.view_logs",
+        "name": "View Audit Logs",
+        "category": "SECURITY/AUDIT",
+        "description": "Examine immutable institutional system and security audit logs"
+      },
+      {
+        "code": "audit.system_reports",
+        "name": "View System Reports",
+        "category": "SECURITY/AUDIT",
+        "description": "Inspect system operational health and security summaries"
+      },
+      {
+        "code": "audit.sync_status",
+        "name": "View Synchronization Status",
+        "category": "SECURITY/AUDIT",
+        "description": "Monitor branch-to-central synchronization and queue states"
+      },
+      {
+        "code": "audit.manage_backups",
+        "name": "Manage Backups",
+        "category": "SECURITY/AUDIT",
+        "description": "Trigger, monitor and verify central database backups"
+      }
+    ],
+    "users": [
+      {
+        "id": "usr-it-ivan",
+        "username": "ivan",
+        "fullName": "Ivan (IT Officer)",
+        "email": "ivan.it@nyamuyanjasacco.ug",
+        "phone": "+256701009090",
+        "passwordHash": "$2b$10$AKRWzOAl8V8xJzvdn2E/3e1gkbAD8xpN.E8StK9Dp8Q1zF9NlIKjO",
+        "roleId": "role-it",
+        "roleName": "IT Officer",
+        "primaryBranchId": "br-nyamuyanja",
+        "allowedBranchIds": [
+          "br-nyamuyanja",
+          "br-kagarama",
+          "br-nyakigyera",
+          "br-kamubeizi",
+          "br-ruborogota",
+          "br-masha"
+        ],
+        "hasMultiBranchAccess": true,
+        "isActive": true,
+        "requiresPasswordReset": false,
+        "directPermissions": [],
+        "revokedPermissions": [],
+        "createdAt": "2026-10-21T14:48:53.116Z",
+        "updatedAt": "2026-10-21T14:48:56.073Z",
+        "lastLoginAt": "2026-10-21T14:48:56.073Z"
+      },
+      {
+        "id": "usr-it-01",
+        "username": "itadm",
+        "fullName": "Patrick Mugisha (IT Officer)",
+        "email": "it.admin@nyamuyanjasacco.ug",
+        "phone": "+256701234567",
+        "passwordHash": "$2b$10$NUToOuelRee7TE67NT5TwujakF23gw57JBDGobOTHsmdIKt4z1A5i",
+        "roleId": "role-it",
+        "roleName": "IT Officer",
+        "primaryBranchId": "br-nyamuyanja",
+        "allowedBranchIds": [
+          "br-nyamuyanja",
+          "br-kagarama",
+          "br-nyakigyera",
+          "br-kamubeizi",
+          "br-ruborogota",
+          "br-masha"
+        ],
+        "hasMultiBranchAccess": true,
+        "isActive": true,
+        "requiresPasswordReset": false,
+        "directPermissions": [],
+        "revokedPermissions": [],
+        "createdAt": "2026-10-21T14:48:53.116Z",
+        "updatedAt": "2026-10-21T14:48:53.116Z"
+      },
+      {
+        "id": "usr-gm-01",
+        "username": "gm001",
+        "fullName": "Eunice Ahimbisibwe (General Manager)",
+        "email": "gm@nyamuyanjasacco.ug",
+        "phone": "+256702345678",
+        "passwordHash": "$2b$10$NUToOuelRee7TE67NT5TwujakF23gw57JBDGobOTHsmdIKt4z1A5i",
+        "roleId": "role-gm",
+        "roleName": "General Manager",
+        "primaryBranchId": "br-nyamuyanja",
+        "allowedBranchIds": [
+          "br-nyamuyanja",
+          "br-kagarama",
+          "br-nyakigyera",
+          "br-kamubeizi",
+          "br-ruborogota",
+          "br-masha"
+        ],
+        "hasMultiBranchAccess": true,
+        "isActive": true,
+        "requiresPasswordReset": false,
+        "directPermissions": [],
+        "revokedPermissions": [],
+        "createdAt": "2026-10-21T14:48:53.116Z",
+        "updatedAt": "2026-10-21T14:48:53.116Z"
+      },
+      {
+        "id": "usr-bm-nya",
+        "username": "bmnya",
+        "fullName": "Frank Twinamatsiko (Branch Manager - Nyamuyanja)",
+        "email": "bm.nyamuyanja@nyamuyanjasacco.ug",
+        "phone": "+256703456789",
+        "passwordHash": "$2b$10$7CqBM7KrHFs/sqg/Hy9isecRjUCmpQCSk7tYmYbUgPv5oTyHXSQoW",
+        "roleId": "role-bm",
+        "roleName": "Branch Manager",
+        "primaryBranchId": "br-nyamuyanja",
+        "allowedBranchIds": [
+          "br-nyamuyanja"
+        ],
+        "hasMultiBranchAccess": false,
+        "isActive": true,
+        "requiresPasswordReset": false,
+        "directPermissions": [],
+        "revokedPermissions": [],
+        "createdAt": "2026-10-21T14:48:53.116Z",
+        "updatedAt": "2026-10-21T14:48:53.116Z"
+      },
+      {
+        "id": "usr-csh-01",
+        "username": "csh01",
+        "fullName": "Sarah Kemigisha (Teller - Nyamuyanja)",
+        "email": "teller01@nyamuyanjasacco.ug",
+        "phone": "+256704567890",
+        "passwordHash": "$2b$10$7CqBM7KrHFs/sqg/Hy9isecRjUCmpQCSk7tYmYbUgPv5oTyHXSQoW",
+        "roleId": "role-cashier",
+        "roleName": "Cashier / Teller",
+        "primaryBranchId": "br-nyamuyanja",
+        "allowedBranchIds": [
+          "br-nyamuyanja"
+        ],
+        "hasMultiBranchAccess": false,
+        "isActive": true,
+        "requiresPasswordReset": false,
+        "directPermissions": [],
+        "revokedPermissions": [],
+        "createdAt": "2026-10-21T14:48:53.116Z",
+        "updatedAt": "2026-10-21T14:48:53.116Z"
+      },
+      {
+        "id": "usr-acct-01",
+        "username": "acct1",
+        "fullName": "Brian Atukwase (Accounts Assistant)",
+        "email": "accounts@nyamuyanjasacco.ug",
+        "phone": "+256705678901",
+        "passwordHash": "$2b$10$7CqBM7KrHFs/sqg/Hy9isecRjUCmpQCSk7tYmYbUgPv5oTyHXSQoW",
+        "roleId": "role-accounts",
+        "roleName": "Accounts Assistant",
+        "primaryBranchId": "br-nyamuyanja",
+        "allowedBranchIds": [
+          "br-nyamuyanja"
+        ],
+        "hasMultiBranchAccess": false,
+        "isActive": true,
+        "requiresPasswordReset": false,
+        "directPermissions": [],
+        "revokedPermissions": [],
+        "createdAt": "2026-10-21T14:48:53.116Z",
+        "updatedAt": "2026-10-21T14:48:53.116Z"
+      },
+      {
+        "id": "usr-aud-01",
+        "username": "audit",
+        "fullName": "Doreen Natukunda (Internal Auditor)",
+        "email": "auditor@nyamuyanjasacco.ug",
+        "phone": "+256706789012",
+        "passwordHash": "$2b$10$7CqBM7KrHFs/sqg/Hy9isecRjUCmpQCSk7tYmYbUgPv5oTyHXSQoW",
+        "roleId": "role-auditor",
+        "roleName": "Internal Auditor",
+        "primaryBranchId": "br-nyamuyanja",
+        "allowedBranchIds": [
+          "br-nyamuyanja",
+          "br-kagarama",
+          "br-nyakigyera",
+          "br-kamubeizi",
+          "br-ruborogota",
+          "br-masha"
+        ],
+        "hasMultiBranchAccess": true,
+        "isActive": true,
+        "requiresPasswordReset": false,
+        "directPermissions": [],
+        "revokedPermissions": [],
+        "createdAt": "2026-10-21T14:48:53.116Z",
+        "updatedAt": "2026-10-21T14:48:53.116Z"
+      }
+    ],
+    "members": [],
+    "corrections": [],
+    "plans": [],
+    "beneficiaries": [],
+    "contributions": [],
+    "renewals": [],
+    "reactivations": [],
+    "claims": [],
+    "smsTemplates": [
+      {
+        "id": "tmpl-exp-30",
+        "code": "EXPIRY_30_DAYS",
+        "category": "EXPIRY_REMINDER_30_DAYS",
+        "name": "30-Day Policy Expiry Reminder",
+        "templateText": "Dear [Member Name], your Turihamwe cover with Nyamuyanja SACCO expires on [Expiry Date]. Please renew at [Branch] before the expiry date to maintain your funeral coverage benefits.",
+        "availableVariables": [
+          "[Member Name]",
+          "[Expiry Date]",
+          "[Branch]",
+          "[Policy Code]",
+          "[Account Number]"
+        ],
+        "isActive": true,
+        "createdByUserId": "usr-it-01",
+        "createdByUserFullName": "Isaac Tumwesigye (IT Officer)",
+        "createdAt": "2026-10-21T14:48:53.123Z",
+        "updatedAt": "2026-10-21T14:48:53.123Z"
+      },
+      {
+        "id": "tmpl-exp-14",
+        "code": "EXPIRY_14_DAYS",
+        "category": "EXPIRY_REMINDER_14_DAYS",
+        "name": "14-Day Expiry Urgent Reminder",
+        "templateText": "Reminder: Dear [Member Name], your Turihamwe funeral coverage expires in 14 days on [Expiry Date]. Avoid benefit lapse by renewing at [Branch].",
+        "availableVariables": [
+          "[Member Name]",
+          "[Expiry Date]",
+          "[Branch]",
+          "[Policy Code]"
+        ],
+        "isActive": true,
+        "createdByUserId": "usr-it-01",
+        "createdByUserFullName": "Isaac Tumwesigye (IT Officer)",
+        "createdAt": "2026-10-21T14:48:53.123Z",
+        "updatedAt": "2026-10-21T14:48:53.123Z"
+      },
+      {
+        "id": "tmpl-exp-7",
+        "code": "EXPIRY_7_DAYS",
+        "category": "EXPIRY_REMINDER_7_DAYS",
+        "name": "7-Day Expiry Critical Warning",
+        "templateText": "URGENT: Dear [Member Name], 7 days remaining for Turihamwe policy [Policy Code] expiring [Expiry Date]. Renew now at [Branch] or via teller.",
+        "availableVariables": [
+          "[Member Name]",
+          "[Expiry Date]",
+          "[Branch]",
+          "[Policy Code]"
+        ],
+        "isActive": true,
+        "createdByUserId": "usr-it-01",
+        "createdByUserFullName": "Isaac Tumwesigye (IT Officer)",
+        "createdAt": "2026-10-21T14:48:53.123Z",
+        "updatedAt": "2026-10-21T14:48:53.123Z"
+      },
+      {
+        "id": "tmpl-exp-due",
+        "code": "EXPIRY_DATE_NOTICE",
+        "category": "EXPIRY_DATE_NOTICE",
+        "name": "Official Turihamwe Plan Expiry Notice",
+        "templateText": "NYAMUYANJA SACCO nekumanyisa ku sente zawe za Turihamwe zihwireyo noshabwa kushashura obutarenzya ebiro mushanju (7) kuriga erizooba",
+        "availableVariables": [],
+        "isActive": true,
+        "createdByUserId": "usr-it-01",
+        "createdByUserFullName": "Isaac Tumwesigye (IT Officer)",
+        "createdAt": "2026-10-21T14:48:53.123Z",
+        "updatedAt": "2026-10-21T14:48:53.123Z"
+      },
+      {
+        "id": "tmpl-clm-sub",
+        "code": "CLAIM_SUBMITTED_NOTICE",
+        "category": "CLAIM_SUBMITTED",
+        "name": "Claim Submitted Acknowledgement",
+        "templateText": "Dear [Member Name], claim docket [Claim Reference] has been received and entered review under [Branch]. You will be updated as review progresses.",
+        "availableVariables": [
+          "[Member Name]",
+          "[Claim Reference]",
+          "[Branch]"
+        ],
+        "isActive": true,
+        "createdByUserId": "usr-it-01",
+        "createdByUserFullName": "Isaac Tumwesigye (IT Officer)",
+        "createdAt": "2026-10-21T14:48:53.123Z",
+        "updatedAt": "2026-10-21T14:48:53.123Z"
+      },
+      {
+        "id": "tmpl-clm-docs",
+        "code": "CLAIM_DOCS_REQUESTED_NOTICE",
+        "category": "CLAIM_DOCS_REQUESTED",
+        "name": "Claim Additional Documents Requested",
+        "templateText": "Dear [Member Name], additional documents are required to process claim [Claim Reference]. Please deliver requested papers to [Branch].",
+        "availableVariables": [
+          "[Member Name]",
+          "[Claim Reference]",
+          "[Branch]"
+        ],
+        "isActive": true,
+        "createdByUserId": "usr-it-01",
+        "createdByUserFullName": "Isaac Tumwesigye (IT Officer)",
+        "createdAt": "2026-10-21T14:48:53.123Z",
+        "updatedAt": "2026-10-21T14:48:53.123Z"
+      },
+      {
+        "id": "tmpl-clm-app",
+        "code": "CLAIM_APPROVED_NOTICE",
+        "category": "CLAIM_APPROVED",
+        "name": "Claim Approved Notification",
+        "templateText": "Dear [Member Name], claim docket [Claim Reference] has been APPROVED. Disbursement processing is underway at [Branch].",
+        "availableVariables": [
+          "[Member Name]",
+          "[Claim Reference]",
+          "[Branch]"
+        ],
+        "isActive": true,
+        "createdByUserId": "usr-it-01",
+        "createdByUserFullName": "Isaac Tumwesigye (IT Officer)",
+        "createdAt": "2026-10-21T14:48:53.123Z",
+        "updatedAt": "2026-10-21T14:48:53.123Z"
+      },
+      {
+        "id": "tmpl-clm-rej",
+        "code": "CLAIM_REJECTED_NOTICE",
+        "category": "CLAIM_REJECTED",
+        "name": "Claim Rejection Formal Notification",
+        "templateText": "Notice: Claim docket [Claim Reference] could not be approved following policy review. Visit [Branch] for official documented explanation.",
+        "availableVariables": [
+          "[Member Name]",
+          "[Claim Reference]",
+          "[Branch]"
+        ],
+        "isActive": true,
+        "createdByUserId": "usr-it-01",
+        "createdByUserFullName": "Isaac Tumwesigye (IT Officer)",
+        "createdAt": "2026-10-21T14:48:53.123Z",
+        "updatedAt": "2026-10-21T14:48:53.123Z"
+      },
+      {
+        "id": "tmpl-contrib-rec",
+        "code": "CONTRIBUTION_RECEIPT_NOTICE",
+        "category": "CONTRIBUTION_RECEIVED",
+        "name": "Contribution Receipt Notification",
+        "templateText": "Nyamuyanja SACCO: Received UGX [Amount UGX] for Turihamwe Account [Account Number]. Receipt Ref: [Receipt Number]. Thank you.",
+        "availableVariables": [
+          "[Member Name]",
+          "[Account Number]",
+          "[Amount UGX]",
+          "[Receipt Number]",
+          "[Branch]"
+        ],
+        "isActive": true,
+        "createdByUserId": "usr-it-01",
+        "createdByUserFullName": "Isaac Tumwesigye (IT Officer)",
+        "createdAt": "2026-10-21T14:48:53.123Z",
+        "updatedAt": "2026-10-21T14:48:53.123Z"
+      }
+    ],
+    "smsQueue": [
+      {
+        "id": "sms-1792594136202-euzgr",
+        "eventId": "evt-1792594136201-azzn",
+        "eventReferenceKey": "PLAN_EXPIRY_AUTO::plan-dedup-1792594136200::2026-10-21",
+        "recipientPhone": "+256701555666",
+        "recipientName": "Idempotency Member",
+        "saccoAccountNumber": "NYA-DEDUP-01",
+        "planId": "plan-dedup-1792594136200",
+        "branchId": "br-nya",
+        "branchName": "Nyamuyanja Branch",
+        "messageText": "NYAMUYANJA SACCO nekumanyisa ku sente zawe za Turihamwe zihwireyo noshabwa kushashura obutarenzya ebiro mushanju (7) kuriga erizooba",
+        "templateCategory": "EXPIRY_DATE_NOTICE",
+        "status": "PENDING",
+        "retryCount": 0,
+        "maxRetries": 3,
+        "provider": "PANDORA",
+        "queuedByUserId": "system",
+        "queuedByUserFullName": "Turihamwe Automated Lifecycle Scheduler",
+        "createdAt": "2026-10-21T14:48:56.202Z",
+        "updatedAt": "2026-10-21T14:48:56.202Z",
+        "isSynced": true
+      },
+      {
+        "id": "sms-1792594136197-zp0qd",
+        "eventId": "evt-1792594136196-ljry",
+        "eventReferenceKey": "PLAN_EXPIRY_AUTO::plan-missed-1792594136195::2026-10-19",
+        "recipientPhone": "+256782333444",
+        "recipientName": "Missed Downtime Member",
+        "saccoAccountNumber": "NYA-MISSED-01",
+        "planId": "plan-missed-1792594136195",
+        "branchId": "br-nya",
+        "branchName": "Nyamuyanja Branch",
+        "messageText": "NYAMUYANJA SACCO nekumanyisa ku sente zawe za Turihamwe zihwireyo noshabwa kushashura obutarenzya ebiro mushanju (7) kuriga erizooba",
+        "templateCategory": "EXPIRY_DATE_NOTICE",
+        "status": "PENDING",
+        "retryCount": 0,
+        "maxRetries": 3,
+        "provider": "PANDORA",
+        "queuedByUserId": "system",
+        "queuedByUserFullName": "Turihamwe Automated Lifecycle Scheduler",
+        "createdAt": "2026-10-21T14:48:56.197Z",
+        "updatedAt": "2026-10-21T14:48:56.197Z",
+        "isSynced": true
+      },
+      {
+        "id": "sms-1792594136190-hcwft",
+        "eventId": "evt-1792594136190-erx9",
+        "eventReferenceKey": "PLAN_EXPIRY_AUTO::plan-exp-1792594136189::2026-10-21",
+        "recipientPhone": "+256772111222",
+        "recipientName": "Tumuhimbise John",
+        "saccoAccountNumber": "NYA-EXP-1792594136188",
+        "planId": "plan-exp-1792594136189",
+        "branchId": "br-nya",
+        "branchName": "Nyamuyanja Branch",
+        "messageText": "NYAMUYANJA SACCO nekumanyisa ku sente zawe za Turihamwe zihwireyo noshabwa kushashura obutarenzya ebiro mushanju (7) kuriga erizooba",
+        "templateCategory": "EXPIRY_DATE_NOTICE",
+        "status": "PENDING",
+        "retryCount": 0,
+        "maxRetries": 3,
+        "provider": "PANDORA",
+        "queuedByUserId": "system",
+        "queuedByUserFullName": "Turihamwe Automated Lifecycle Scheduler",
+        "createdAt": "2026-10-21T14:48:56.190Z",
+        "updatedAt": "2026-10-21T14:48:56.190Z",
+        "isSynced": true
+      }
+    ],
+    "notificationEvents": [],
+    "alerts": [],
+    "reportHistory": [],
+    "auditLogs": [
+      {
+        "id": "audit-deploy-1792594136219",
+        "timestamp": "2026-10-21T14:48:56.219Z",
+        "userId": "usr-it-01",
+        "username": "itadm",
+        "userFullName": "IT Systems Officer",
+        "branchId": "br-nyamuyanja",
+        "branchName": "Nyamuyanja Branch",
+        "action": "SYSTEM_SETTING_CHANGED",
+        "recordType": "CONFIGURATION",
+        "recordId": "DEPLOYMENT_CLEAN_INITIALIZATION",
+        "newValue": "Operational database sanitized for production deployment. All pre-go-live test records cleared.",
+        "reason": "Institutional deployment preparation - pre-production database cleanup",
+        "isSynced": true
+      }
+    ],
+    "systemSettings": {
+      "institution.name": "Nyamuyanja SACCO Ltd",
+      "system.name": "Turihamwe Management System",
+      "system.version": "1.0.0-phase7",
+      "sms.provider": "PANDORA",
+      "sms.environment": "SANDBOX",
+      "sms.last_error_sanitized": "Pandora SMS submission is not configured on this deployment, so queued messages stay in the queue and are never marked as sent. Provider credentials are held only by the secure backend service, never by this interface.",
+      "sms.last_error_time": "2026-10-21T14:48:56.185Z",
+      "deployment.ready": "true",
+      "deployment.clearedAt": "2026-10-21T14:48:56.218Z",
+      "deployment.status": "READY_FOR_PRODUCTION"
+    },
+    "businessRulesConfig": {
+      "contributionAmount": {
+        "status": "PENDING_INSTITUTIONAL_APPROVAL",
+        "defaultAmount": null,
+        "isConfigurable": true,
+        "notes": "Contribution amounts remain unprescribed pending SACCO board specification."
+      },
+      "contributionFrequency": {
+        "status": "PENDING_INSTITUTIONAL_APPROVAL",
+        "allowedFrequencies": [
+          "ANNUAL",
+          "SEMI_ANNUAL",
+          "QUARTERLY",
+          "MONTHLY",
+          "FLEXIBLE"
+        ],
+        "defaultFrequency": null,
+        "isConfigurable": true,
+        "notes": "Frequency schedules are configurable hooks without hardcoded business rules."
+      },
+      "gracePeriodDays": {
+        "status": "PENDING_INSTITUTIONAL_APPROVAL",
+        "defaultDays": null,
+        "isConfigurable": true,
+        "notes": "Grace period durations are not finalized by policy and remain configurable."
+      },
+      "renewalCoverPeriodMonths": {
+        "status": "PENDING_INSTITUTIONAL_APPROVAL",
+        "defaultMonths": null,
+        "isConfigurable": true,
+        "notes": "Renewal duration calculation is pending executive signoff."
+      },
+      "reactivationEligibility": {
+        "status": "PENDING_EXECUTIVE_POLICY",
+        "requiresBoardApproval": false,
+        "isConfigurable": true,
+        "notes": "Reactivation requires authorized officer review with justification reasons."
+      },
+      "claimQualifyingEvents": {
+        "status": "PENDING_INSTITUTIONAL_APPROVAL",
+        "allowedEvents": [
+          "DEATH_OF_MEMBER",
+          "DEATH_OF_BENEFICIARY"
+        ],
+        "isConfigurable": true,
+        "notes": "Qualifying events pending board policy approval"
+      },
+      "claimWaitingPeriodDays": {
+        "status": "PENDING_INSTITUTIONAL_APPROVAL",
+        "defaultDays": null,
+        "isConfigurable": true,
+        "notes": "Waiting period from enrolment pending board approval"
+      },
+      "claimExclusions": {
+        "status": "PENDING_INSTITUTIONAL_APPROVAL",
+        "exclusionList": [],
+        "isConfigurable": true,
+        "notes": "Exclusions list pending underwriting review"
+      },
+      "claimBenefitCalculation": {
+        "status": "PENDING_INSTITUTIONAL_APPROVAL",
+        "benefitFormulaDescription": null,
+        "isConfigurable": true,
+        "notes": "Benefit amounts and calculation pending AGM/board approval"
+      },
+      "claimFilingDeadlineDays": {
+        "status": "PENDING_INSTITUTIONAL_APPROVAL",
+        "maxDaysFromIncident": null,
+        "isConfigurable": true,
+        "notes": "Claim notification deadline pending board approval"
+      },
+      "claimApprovalHierarchy": {
+        "status": "PENDING_INSTITUTIONAL_APPROVAL",
+        "requiresExecutiveApproval": true,
+        "requiresDualSignOffAboveThreshold": false,
+        "isConfigurable": true,
+        "notes": "Executive approval required (Branch Manager or GM)"
+      },
+      "notificationTiming": {
+        "status": "ACTIVE_POLICY",
+        "confirmedIntervalsDays": [
+          30,
+          14,
+          7,
+          0,
+          -1
+        ],
+        "isConfigurable": true,
+        "notes": "Confirmed notification timing of 30 days, 14 days, 7 days, expiry date (0), and post-expiry follow up."
+      },
+      "eligibilityRules": {
+        "status": "PENDING_INSTITUTIONAL_APPROVAL",
+        "minMembershipDurationDays": null,
+        "minSavingsBalanceUGX": null,
+        "isConfigurable": true,
+        "notes": "Member eligibility rules for Turihamwe enrolment pending board ratification."
+      },
+      "claimRequirements": {
+        "status": "PENDING_INSTITUTIONAL_APPROVAL",
+        "mandatoryDocumentTypes": [
+          "DEATH_CERTIFICATE",
+          "NATIONAL_ID_COPY",
+          "BURIAL_PERMIT"
+        ],
+        "isConfigurable": true,
+        "notes": "Mandatory documentation specifications pending insurance subcommittee signoff."
+      }
+    },
+    "deletedUserIds": [
+      "usr-test-del-1792594134756",
+      "usr-del-1792594136216"
+    ],
+    "deletedUserUsernames": [
+      "udel1",
+      "testdel766"
+    ]
+  }
+}

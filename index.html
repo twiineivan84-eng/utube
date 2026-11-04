@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTube — Unofficial Premium Demo</title>
+    <meta name="description" content="Production-oriented offline-first SACCO management system for Nyamuyanja SACCO Ltd, Uganda." />
+    <meta property="og:title" content="Turihamwe Management System - Nyamuyanja SACCO Ltd" />
+    <meta property="og:description" content="Production-oriented offline-first SACCO management system for Nyamuyanja SACCO Ltd, Uganda." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Cleanly handle benign development WebSocket disconnects in proxy preview environments
+      window.addEventListener('unhandledrejection', function (event) {
+        if (
+          event.reason &&
+          (event.reason.message === 'WebSocket closed without opened.' ||
+            (typeof event.reason === 'string' && event.reason.includes('WebSocket closed without opened')))
+        ) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

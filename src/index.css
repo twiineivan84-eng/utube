@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* ==========================================================================
+   TURIHAMWE MANAGEMENT SYSTEM — CENTRAL iOS / SAN FRANCISCO TYPOGRAPHY
+   Organization: Nyamuyanja SACCO Ltd, Uganda
+   Native Apple SF Pro Display & SF Pro Text with system UI fallbacks.
+   ========================================================================== */
+
+:root {
+  /* Font Family Stacks */
+  --font-system: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Typography Hierarchy Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Apple-Style Refined Tracking / Letter Spacing */
+  --tracking-tight-display: -0.022em;
+  --tracking-tight-heading: -0.015em;
+  --tracking-body: -0.006em;
+  --tracking-label: 0.012em;
+  --tracking-caption: 0.005em;
+
+  /* Line Heights */
+  --leading-display: 1.2;
+  --leading-heading: 1.3;
+  --leading-body: 1.5;
+  --leading-snug: 1.375;
+}
+
+/* Base Document Typography */
+html {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  letter-spacing: var(--tracking-body);
+}
+
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: var(--tracking-body);
+  color: #1e293b;
+  background-color: #f8fafc;
+}
+
+/* Apple SF Pro Display Headings: Clean, prominent, semibold with refined negative tracking */
+h1, h2, h3, h4, h5, h6, .font-display, [data-typography="display"] {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--tracking-tight-heading);
+  line-height: var(--leading-heading);
+}
+
+h1 {
+  letter-spacing: var(--tracking-tight-display);
+  line-height: var(--leading-display);
+}
+
+/* Section Headings */
+h2, h3 {
+  letter-spacing: var(--tracking-tight-heading);
+}
+
+/* Form Controls & Inputs: Ensure Apple San Francisco system UI behavior */
+button, input, select, textarea, optgroup {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Buttons: Semibold / Medium with iOS-inspired precision */
+button, [role="button"] {
+  letter-spacing: var(--tracking-body);
+}
+
+/* Form Labels: Crisp medium weight with clear contrast */
+label {
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--tracking-label);
+}
+
+/* Tables: Professional SACCO Financial & Operational Tabular Numeral Alignment */
+table {
+  font-family: var(--font-body);
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th {
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--tracking-label);
+  -webkit-font-smoothing: antialiased;
+}
+
+td {
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-regular);
+  letter-spacing: var(--tracking-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Tabular Numerals for financial balances, dates, account numbers & amounts */
+table td, table th, .tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Monospace & Identification Numbers */
+code, kbd, samp, pre, .font-mono {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum";
+}
+
+/* Navigation items */
+nav button, nav a {
+  font-family: var(--font-body);
+  letter-spacing: var(--tracking-body);
+}
+
+/* Modals & Dialogs */
+[role="dialog"] {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[role="dialog"] h1,
+[role="dialog"] h2,
+[role="dialog"] h3 {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Microcopy, badges & captions */
+small, caption, .caption {
+  letter-spacing: var(--tracking-caption);
+}
