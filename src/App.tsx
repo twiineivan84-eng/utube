@@ -16,7 +16,7 @@ import { UsersAndRightsView } from './views/UsersAndRightsView';
 import { SystemView } from './views/SystemView';
 import { RefreshCw } from 'lucide-react';
 import { PermissionCode } from './types';
-import { YouTubePremiumMock } from './components/youtube/YouTubePremiumMock';
+import { UTubeWebsite } from './components/youtube/YouTubePremiumMock';
 
 const MainApplication: React.FC = () => {
   const { isAuthenticated, isLoading, hasAnyPermission, user } = useAuth();
@@ -118,15 +118,15 @@ const MainApplication: React.FC = () => {
 };
 
 export default function App() {
-  if (new URLSearchParams(window.location.search).get('mock') === 'youtube-premium') {
-    return <YouTubePremiumMock />;
+  if (new URLSearchParams(window.location.search).get('app') === 'turihamwe') {
+    return (
+      <AuthProvider>
+        <SyncProvider>
+          <MainApplication />
+        </SyncProvider>
+      </AuthProvider>
+    );
   }
 
-  return (
-    <AuthProvider>
-      <SyncProvider>
-        <MainApplication />
-      </SyncProvider>
-    </AuthProvider>
-  );
+  return <UTubeWebsite />;
 }
